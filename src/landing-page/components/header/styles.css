@@ -1,9 +1,6 @@
 header#main-header {
     width: 100%;
-    height: 128px;
-    font-size: 36px;
-    font-weight: bold;
-    color: #ffffff;
+    height: 512px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,4 +13,15 @@ div#bg-header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+p#text-header {
+    font-size: 76px;
+    font-weight: bold;
+    color: #ffffff;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    text-align: center;
 }

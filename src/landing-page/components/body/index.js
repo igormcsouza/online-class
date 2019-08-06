@@ -1,6 +1,7 @@
 import React from 'react'
 
 import './styles.css'
+import Image from '../../img/learn-english.png'
 
 const Body = () => (
     <main id='main-body'>
@@ -12,6 +13,10 @@ const Body = () => (
             dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
             mollit anim id est laborum.
+        </p>
+        <img id='image' src={Image} alt='Learn English' />
+        <p id='comments'>
+            Aulas de Inglês online!! Só aqui!!
         </p>
     </main>
 )

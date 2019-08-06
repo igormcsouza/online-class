@@ -1,22 +1,38 @@
 main#main-body {
     display: block;
     justify-content: center;
-    font-family: 'Times New Roman', Times, serif;
     align-items: center;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-top: 10px;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 40px;
 }
 
-p#title{
-    font-size: 22px;
+p#title {
+    font-size: 36px;
     text-align: left;
     font-weight: bold;
 
+    margin-bottom: 20px;
+}
+
+p#text {
+    font-size: 18px;
+    text-align: left;
+}
+
+p#comments {
+    font-size: 16px;
+    text-align: center;
+    color: #afadad;
+    margin-top: 5px;
     margin-bottom: 5px;
 }
 
-p#text{
-    font-size: 16px;
-    text-align: justify;
+img#image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
