@@ -6,7 +6,7 @@ const Header = () => (
     <div id='bg-header'>
         <header id='main-header'>
             <p id='text-header'>
-                Aulas de Inglês sem Sair de Casa
+                Aulas de Inglês sem Sair de Casa?
             </p>
         </header>
     </div>
