@@ -29,7 +29,7 @@ class FeedbackForm extends React.Component {
         this.setState({ observations: event.target.value })
     }
     
-    handleSubmit = event => {
+    handleSubmit = async event => {
         event.preventDefault();
     
         const form = {
@@ -38,11 +38,14 @@ class FeedbackForm extends React.Component {
           observations: this.state.observations
         };
 
-        axios.post(`https://online-class-api.herokuapp.com/api/landing-page-form`, { form })
+        console.log(form)
+
+        await axios.post(`https://online-class-api.herokuapp.com/api/landing-page-form`, { form })
             .then(res => {
                 console.log(res);
                 console.log(res.data);
             })
+            .catch(() => console.log("Can’t access response. Blocked by Axios?"))
     }
     
     render(){    
