@@ -35,7 +35,7 @@ class Body extends React.Component {
                     Não estude sozinho, estude conosco!
                 </p>
                 <p className='text'>
-                    Se você quiser apoiar o projeto, pode fazer clicando no butão abaixo.
+                    Se você quiser apoiar o projeto, pode fazer clicando abaixo.
                 </p>
                 <button className='button' onClick={() => {
                     this.setState({ showForm: true })
