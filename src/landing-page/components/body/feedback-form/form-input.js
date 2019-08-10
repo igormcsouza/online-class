@@ -2,7 +2,7 @@ import React from 'react'
 
 import './styles.css'
 
-const FormInput = ({ labelName, type, name, placeholder }) => (
+const FormInput = ({ labelName, type, name, placeholder, value, onChange }) => (
     <div className="row">
         <div className="col-25">
             <label> {labelName} </label>
@@ -12,6 +12,8 @@ const FormInput = ({ labelName, type, name, placeholder }) => (
                 type={type}
                 name={name} 
                 placeholder={placeholder}
+                value={value} 
+                onChange={onChange}
             />
         </div>
     </div>
