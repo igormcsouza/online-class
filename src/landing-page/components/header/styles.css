@@ -4,6 +4,7 @@ header#main-header {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 76px;
 }
 
 div#bg-header {
@@ -16,7 +17,7 @@ div#bg-header {
 }
 
 p#text-header {
-    font-size: 76px;
+    font-size: 92%;
     font-weight: bold;
     color: #ffffff;
     padding-left: 10%;
