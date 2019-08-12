@@ -43,6 +43,7 @@ class FeedbackForm extends React.Component {
             },
         ).then(res => {
             console.log("Sucessfully submitted!")
+            this.setState({ sended:true })
         }).catch(() => console.log("Something went wrong and the post was blocked"))
     }
     
