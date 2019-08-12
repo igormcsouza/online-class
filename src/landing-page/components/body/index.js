@@ -14,8 +14,8 @@ class Body extends React.Component {
             <main className='main-body'>
                 <p className='title'> Qual a nossa proposta? </p>
                 <p className='text'>
-                    Após alguns estudos, percebemos uma grande necessclassNameade na população brasileira, tendo em
-                    vista essa necessclassNameade, propomos uma solução que vai dar muito certo para você.
+                    Após alguns estudos, percebemos uma grande necessidade na população brasileira, tendo em
+                    vista essa necessidade, propomos uma solução que vai dar muito certo para você.
                 </p>
                 <p className='quote'> What is your biggest dream? </p>
                 <p className='text'>
@@ -27,7 +27,7 @@ class Body extends React.Component {
                 <p className='text'>
                     Queremos lançar uma aplicação online onde você pode conversar com professores de 
                     inglês muito bem qualificados e treinados, nestas aulas o nosso foco é conversação
-                    você vai poder tirar suas dúvclassNameas e ainda ter uma boa conversa com quem entender do
+                    você vai poder tirar suas dúvidas e ainda ter uma boa conversa com quem entender do
                     assunto.
                 </p>
                 <img className='image' src={Image} alt='Learn English' />
