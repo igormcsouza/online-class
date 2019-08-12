@@ -16,7 +16,8 @@ class FeedbackForm extends React.Component {
     state = {
         name: '',
         email: '',
-        observations: ''
+        observations: '',
+        sended: false
     }
 
     handleChangeName = event => {
@@ -31,21 +32,18 @@ class FeedbackForm extends React.Component {
     
     handleSubmit = async event => {
         event.preventDefault();
-    
-        const form = {
-          name: this.state.name,
-          email: this.state.email,
-          observations: this.state.observations
-        };
 
-        console.log(form)
-
-        await axios.post(`https://online-class-api.herokuapp.com/api/landing-page-form`, { form })
-            .then(res => {
-                console.log(res);
-                console.log(res.data);
-            })
-            .catch(() => console.log("Can’t access response. Blocked by Axios?"))
+        await axios.post(
+            `https://online-class-api.herokuapp.com/api/landing-page-form`, 
+            // `http://localhost:3001/api/landing-page-form`, // Teste
+            {
+                name: this.state.name,
+                email: this.state.email,
+                observations: this.state.observations
+            },
+        ).then(res => {
+            console.log("Sucessfully submitted!")
+        }).catch(() => console.log("Something went wrong and the post was blocked"))
     }
     
     render(){    
@@ -78,9 +76,10 @@ class FeedbackForm extends React.Component {
                         onChange={this.handleChangeObservation}
                     />
                     <br></br>
+                    { this.state.sended ? <p> Obrigado! </p> :
                     <div className="row">
                         <input type="submit" value="Enviar"/>
-                    </div>
+                    </div>}
                 </form>
             </div>
         )
