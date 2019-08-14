@@ -1,8 +1,6 @@
 /**
  * Comments: The things is must do is...
  * 2. Fix the side margins
- * 3. Aling the text from the textarea to be at 
- * the top! If it could.
  */
 
 import React from 'react'
