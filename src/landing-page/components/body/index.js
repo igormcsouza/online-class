@@ -37,10 +37,14 @@ class Body extends React.Component {
                 <p className='text'>
                     Se você quiser apoiar o projeto, pode fazer clicando abaixo.
                 </p>
-                <button className='button' onClick={() => {
-                    this.setState({ showForm: true })
-                }}><span> Apoiar </span></button>
                 { this.state.showForm ? <FeedbackForm /> : null }
+                <button className='button' onClick={() => {
+                    this.state.showForm ? this.setState({ 
+                        showForm: false 
+                    }) : this.setState({ 
+                        showForm: true 
+                    })
+                }}><span> { this.state.showForm ? "Fechar" : "Apoiar" } </span></button>
             </main>
         )
     }
