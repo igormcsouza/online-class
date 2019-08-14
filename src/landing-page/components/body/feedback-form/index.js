@@ -68,14 +68,19 @@ class FeedbackForm extends React.Component {
                         value={this.state.email} 
                         onChange={this.handleChangeEmail}
                     />
-                    <FormInput 
-                        labelName='Observações' 
-                        type='textarea' 
-                        name='observacoes' 
-                        placeholder='Nos deixe seu feedback...'
-                        value={this.state.observations} 
-                        onChange={this.handleChangeObservation}
-                    />
+                    <div className="row">
+                        <div className="col-25">
+                            <label> Observações </label>
+                        </div>
+                        <div className="col-75">
+                            <textarea 
+                                name='observacoes'
+                                placeholder='Nos deixe seu feedback...'
+                                value={this.state.observations}
+                                onChange={this.handleChangeObservation}
+                            />
+                        </div>
+                    </div>
                     <br></br>
                     { this.state.sended ? <p> Obrigado! </p> :
                     <div className="row">
