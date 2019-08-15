@@ -1,9 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
 import * as serviceWorker from './serviceWorker';
+import { BrowserRouter, Switch, Route } from 'react-router-dom' // importando o BrowserRouter do pacote que acabamos de instalar
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import LandingPage from './landing-page'
+import WebPage from './web'
+import Application from './app'
+import Page404 from './utils/page404'
+
+ReactDOM.render(
+    <BrowserRouter>
+        <Switch>
+            <Route path='/' exact={true} component={LandingPage} />
+            <Route path='/application' component={Application} />
+            <Route path='/web' component={WebPage} />
+            <Route path='*' component={Page404} />
+        </Switch>
+    </BrowserRouter>,
+    document.getElementById('root')
+)
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
